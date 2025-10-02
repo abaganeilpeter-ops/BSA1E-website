@@ -93,8 +93,15 @@
     <img class="slides" src="pic1.jpg" alt="Gallery Image 1">
     <img class="slides" src="pic2.jpg" alt="Gallery Image 2">
     <img class="slides" src="pic3.jpg" alt="Gallery Image 3">
-    <!-- Added Facebook image -->
-    <img class="slides" src="https://scontent.fcgm1-1.fna.fbcdn.net/v/t1.15752-9/551977394_2245012769296447_7386905005777165957_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_ohc=tiwfocCnedMQ7kNvwHDI58d&amp;_nc_oc=AdlwVoHIYC5laBKe6UYssVGHhyiEYPtYhe9-NCrru71Fc5amWxPpWBe_33lAdSS9hEs&amp;_nc_zt=23&amp;_nc_ht=scontent.fcgm1-1.fna&amp;oh=03_Q7cD3gGkaC1oe1dhcQ0ViTMG89nDdbGqeeUTIB3zjJTuY-0Nzg&amp;oe=69060D09" alt="Class Photo">
+    
+    <!-- Facebook images -->
+    <img class="slides" src="https://scontent.fcgm1-1.fna.fbcdn.net/v/t1.15752-9/551977394_2245012769296447_7386905005777165957_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_ohc=tiwfocCnedMQ7kNvwHDI58d&_nc_oc=AdlwVoHIYC5laBKe6UYssVGHhyiEYPtYhe9-NCrru71Fc5amWxPpWBe_33lAdSS9hEs&_nc_zt=23&_nc_ht=scontent.fcgm1-1.fna&oh=03_Q7cD3gGkaC1oe1dhcQ0ViTMG89nDdbGqeeUTIB3zjJTuY-0Nzg&oe=69060D09" alt="Class Photo 1">
+    
+    <img class="slides" src="https://scontent.fcgm1-1.fna.fbcdn.net/v/t1.15752-9/553596515_659915083845618_2834815710782948404_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_ohc=_JCyA31LF7kQ7kNvwEgxAjA&_nc_oc=AdkiODIJ9A4M7hlVwoJCq4htBY0-5kJ6loFGC0mwSvUXvGfBXvwiUZbxnkvopNL1-Mo&_nc_zt=23&_nc_ht=scontent.fcgm1-1.fna&oh=03_Q7cD3gFM6YuL2UT9zu9H89j5sC-D2zpAeSRSLwz28nTOtid2bA&oe=690608A0" alt="Class Photo 2">
+    
+    <img class="slides" src="https://scontent.fcgm1-1.fna.fbcdn.net/v/t1.15752-9/541066134_1475130780337683_741858324728965253_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=OzVlSmmDxUwQ7kNvwHKWoww&_nc_oc=AdmHCVFF-YREHhqQR1MIVIxO11DNKSJ8kHTmCFWRCO44aYQPRk1GDY4bOloydSmrSz8&_nc_zt=23&_nc_ht=scontent.fcgm1-1.fna&oh=03_Q7cD3gE8TVpUObnGG4kxzfXmSUdNbLHdmo2y1d5ccVJ6C7feYQ&oe=69060A64" alt="Class Photo 3">
+    
+    <img class="slides" src="https://scontent.fcgm1-1.fna.fbcdn.net/v/t1.15752-9/540462504_779134147862055_3306874648497858373_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Ztu0MsGUFrwQ7kNvwHpthL0&_nc_oc=AdnUGTpWcNR8EnvQnr7IJEY-pwWA3jMzBLgfj1XSf6EbQIXuPpj_v70dXHo_4pY_tY8&_nc_zt=23&_nc_ht=scontent.fcgm1-1.fna&oh=03_Q7cD3gG6e1C6DVxnFF-05ZoQdwuGuAwtFQDnD3WLLUO0FwKNEg&oe=69061A64" alt="Class Photo 4">
     
     <button class="prev" onclick="plusSlides(-1)">❮</button>
     <button class="next" onclick="plusSlides(1)">❯</button>
@@ -107,12 +114,12 @@ let slideIndex = 1;
 function showSlides(n) {
   const slides = document.getElementsByClassName("slides");
   if (slides.length === 0) return;
-  if (n > slides.length) { slideIndex = 1; }
-  if (n < 1) { slideIndex = slides.length; }
+  if (n > slides.length) slideIndex = 1;
+  if (n < 1) slideIndex = slides.length;
   for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none"; // hide all slides
+    slides[i].style.display = "none";
   }
-  slides[slideIndex - 1].style.display = "block"; // show current slide
+  slides[slideIndex - 1].style.display = "block";
 }
 
 function plusSlides(n) {
@@ -159,6 +166,7 @@ function showSlides(n){
   slides[slideIndex-1].style.display="block";
 }
 </script>
+
 
 
 
