@@ -1,0 +1,178 @@
+/* General Reset & Body */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: #004aad;
+  margin-bottom: 20px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #004aad, #ffcc00);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header img {
+  max-height: 60px;
+  vertical-align: middle;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #002b6f;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Cards */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* To-Do List */
+.todo ul {
+  list-style: none;
+  padding: 0;
+}
+
+.todo li {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Countdown */
+.countdowns div {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #004aad;
+}
+
+/* Class Officers */
+.officers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.officer {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.officer:hover {
+  transform: translateY(-5px);
+}
+
+.officer img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Table */
+.table-wrapper {
+  overflow-x: auto; /* Responsive table */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+table th {
+  background: #004aad;
+  color: white;
+}
+
+/* Gallery */
+.gallery {
+  position: relative;
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+.slides {
+  display: none;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.gallery button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #004aad;
+  color: white;
+  margin-top: 40px;
+}

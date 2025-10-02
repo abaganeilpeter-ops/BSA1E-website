@@ -33,7 +33,7 @@
 <body>
 
 <header>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgQRQF6jJUGaRBL7TpRoSnUmYoXa8SdmJagA&amp;s" class="sFlh5c FyHeAf" alt="USTP Claveria | Claveria" jsname="JuXqh" style="width: 500px; height: 500px; margin: 0px;" data-ilt="1759411197649">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgQRQF6jJUGaRBL7TpRoSnUmYoXa8SdmJagA&amp;s" class="sFlh5c FyHeAf" alt="USTP Claveria | Claveria" jsname="JuXqh" style="width: 140px; height: auto; margin: 0px;" data-ilt="1759411197649">
     <h1>USTP Claveria College of Agriculture - BSA 1-E</h1>
   <nav>
     <a href="#home">Home</a>
@@ -47,36 +47,30 @@
   <h2>Welcome to BSA 1-E</h2>
   <div class="card announcements">
     <h3>📢 Announcements</h3>
-    <p>No announcements yet. Stay tuned!</p>
+    <p>EXAM WEEK!</p>
   </div>
   <div class="card todo">
-    <h3>✅ Weekly To-Do List</h3>
+    <h3>✅ To-Do List</h3>
     <ul>
-      <li>Submit assignment 1</li>
-      <li>Group project meeting</li>
-      <li>Prepare for quiz in Crop Science</li>
+      <li>STUDY FOR MIDTERM </li>
+      <li>CROP PROT PIT</li>
     </ul>
   </div>
   <div class="card countdowns">
     <h3>⏳ Important Dates</h3>
-    <div id="midterms"></div>
-    <div id="finals"></div>
-    <div id="semesterEnd"></div>
+    <li>midterms OCT 2,3,6,7,8 </li>
+    <li>finals</li>
+    <li>semesterEnd</li>
   </div>
 </section>
 
 <section id="officers">
-  <h2>Class Officers</h2>
+  <h2>Class Officer</h2>
   <div class="officers">
     <div class="officer">
-      <img src="officer1.jpg" alt="President">
-      <h4>Juan Dela Cruz</h4>
+      <img data-visualcompletion="media-vc-image" class="x15mokao x1ga7v0g x16uus16 xbiv7yw x1bwycvy x193iq5w x4fas0m x19kjcj4" alt="May be an image of 1 person and eyeglasses" referrerpolicy="origin-when-cross-origin" src="https://scontent.fcgm1-1.fna.fbcdn.net/v/t39.30808-6/537930242_122140194218827047_5847422105499295781_n.jpg?_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=a5f93a&amp;_nc_ohc=mRvyWK-eEG0Q7kNvwGqNnyH&amp;_nc_oc=AdnJBArQD0f9qDcodRksBx18hzjdQfwAdHhqi1rhmhBrdXHKe2_fWhg2UT2uTFGQhME&amp;_nc_zt=23&amp;_nc_ht=scontent.fcgm1-1.fna&amp;_nc_gid=ppdJxEPuGkYS0Yyyuo2Vig&amp;oh=00_AfamvZEjgxNCg8FDkitDbc2KQXPK_fiJYzHKB2BIg34p0g&amp;oe=68E44223">
+      <h4>Daphne Paglinawan</h4>
       <p>President</p>
-    </div>
-    <div class="officer">
-      <img src="officer2.jpg" alt="Vice President">
-      <h4>Maria Santos</h4>
-      <p>Vice President</p>
     </div>
   </div>
 </section>
@@ -85,8 +79,11 @@
   <h2>Class Schedule</h2>
   <table>
     <tbody><tr><th>Day</th><th>Time</th><th>Subject</th></tr>
-    <tr><td>Monday</td><td>8:00 - 10:00</td><td>Crop Science</td></tr>
-    <tr><td>Tuesday</td><td>10:00 - 12:00</td><td>Soil Science</td></tr>
+    <tr><td>Monday</td><td>9:00am - 10:30am</td><td>UNDERSTANDING THE SELF</td></tr>
+    <tr><td>monday</td><td>1:00pm - 2:30pm</td><td>READINGS IN THE PHILIPPINE HISTORY</td></tr>
+    <tr><td>Tuesday</td><td>7:00am - 12:00pm</td><td>PRINCIPLES OF CROP PROTECTION</td></tr>
+    <tr><td>Tuesday</td><td>2:30pm - 4:00pm</td><td>UPURPOSIVE COMMUNICATION</td></tr>
+    <tr><td>Tuesday</td><td>5:30pm - 7:00pm</td><td>NSTP CWTS</td></tr>
   </tbody></table>
 </section>
 
@@ -96,10 +93,38 @@
     <img class="slides" src="pic1.jpg" alt="Gallery Image 1">
     <img class="slides" src="pic2.jpg" alt="Gallery Image 2">
     <img class="slides" src="pic3.jpg" alt="Gallery Image 3">
+    <!-- Added Facebook image -->
+    <img class="slides" src="https://scontent.fcgm1-1.fna.fbcdn.net/v/t1.15752-9/551977394_2245012769296447_7386905005777165957_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_ohc=tiwfocCnedMQ7kNvwHDI58d&amp;_nc_oc=AdlwVoHIYC5laBKe6UYssVGHhyiEYPtYhe9-NCrru71Fc5amWxPpWBe_33lAdSS9hEs&amp;_nc_zt=23&amp;_nc_ht=scontent.fcgm1-1.fna&amp;oh=03_Q7cD3gGkaC1oe1dhcQ0ViTMG89nDdbGqeeUTIB3zjJTuY-0Nzg&amp;oe=69060D09" alt="Class Photo">
+    
     <button class="prev" onclick="plusSlides(-1)">❮</button>
     <button class="next" onclick="plusSlides(1)">❯</button>
   </div>
 </section>
+
+<script>
+let slideIndex = 1;
+
+function showSlides(n) {
+  const slides = document.getElementsByClassName("slides");
+  if (slides.length === 0) return;
+  if (n > slides.length) { slideIndex = 1; }
+  if (n < 1) { slideIndex = slides.length; }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; // hide all slides
+  }
+  slides[slideIndex - 1].style.display = "block"; // show current slide
+}
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Show the first image after the page loads
+window.onload = function() {
+  showSlides(slideIndex);
+};
+</script>
+
 
 <footer>
   <p>© 2025 USTP Claveria - BSA 1-E | All Rights Reserved</p>
@@ -134,6 +159,7 @@ function showSlides(n){
   slides[slideIndex-1].style.display="block";
 }
 </script>
+
 
 
 
