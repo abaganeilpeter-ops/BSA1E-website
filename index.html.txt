@@ -1,0 +1,141 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USTP Claveria - BSA 1-E</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background:#f8f9fa; color:#333; }
+    h1,h2,h3,h4 { margin:0 0 10px; }
+    header { background: linear-gradient(90deg, #004aad, #ffcc00); color:white; padding:15px; text-align:center; position:sticky; top:0; z-index:1000; }
+    header img { max-height:60px; vertical-align:middle; }
+    nav { margin-top:10px; }
+    nav a { margin:0 15px; color:white; text-decoration:none; font-weight:bold; transition:0.3s; }
+    nav a:hover { color:#002b6f; }
+    section { padding:40px 20px; max-width:1100px; margin:auto; }
+    h2 { text-align:center; margin-bottom:20px; color:#004aad; }
+    .card { background:white; padding:20px; border-radius:10px; margin-bottom:20px; box-shadow:0 4px 8px rgba(0,0,0,0.1); }
+    .todo ul { list-style:none; padding:0; }
+    .todo li { padding:8px; border-bottom:1px solid #ddd; }
+    .countdowns div { margin:10px 0; font-size:18px; font-weight:bold; color:#004aad; }
+    .officers { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:20px; }
+    .officer { background:white; padding:15px; border-radius:10px; text-align:center; box-shadow:0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    .officer:hover { transform:translateY(-5px); }
+    .officer img { width:100px; height:100px; object-fit:cover; border-radius:50%; margin-bottom:10px; }
+    table { width:100%; border-collapse:collapse; background:white; box-shadow:0 4px 8px rgba(0,0,0,0.1); }
+    table th, table td { border:1px solid #ddd; padding:10px; text-align:center; }
+    table th { background:#004aad; color:white; }
+    .gallery { position:relative; max-width:700px; margin:auto; }
+    .slides { display:none; width:100%; border-radius:10px; }
+    .gallery button { position:absolute; top:50%; transform:translateY(-50%); background:rgba(0,0,0,0.5); color:white; border:none; padding:10px; cursor:pointer; }
+    .prev { left:0; } .next { right:0; }
+    footer { text-align:center; padding:15px; background:#004aad; color:white; margin-top:40px; }
+  </style>
+</head>
+<body>
+
+<header>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgQRQF6jJUGaRBL7TpRoSnUmYoXa8SdmJagA&amp;s" class="sFlh5c FyHeAf" alt="USTP Claveria | Claveria" jsname="JuXqh" style="width: 500px; height: 500px; margin: 0px;" data-ilt="1759411197649">
+    <h1>USTP Claveria College of Agriculture - BSA 1-E</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#officers">Class Officers</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#gallery">Gallery</a>
+  </nav>
+</header>
+
+<section id="home">
+  <h2>Welcome to BSA 1-E</h2>
+  <div class="card announcements">
+    <h3>📢 Announcements</h3>
+    <p>No announcements yet. Stay tuned!</p>
+  </div>
+  <div class="card todo">
+    <h3>✅ Weekly To-Do List</h3>
+    <ul>
+      <li>Submit assignment 1</li>
+      <li>Group project meeting</li>
+      <li>Prepare for quiz in Crop Science</li>
+    </ul>
+  </div>
+  <div class="card countdowns">
+    <h3>⏳ Important Dates</h3>
+    <div id="midterms"></div>
+    <div id="finals"></div>
+    <div id="semesterEnd"></div>
+  </div>
+</section>
+
+<section id="officers">
+  <h2>Class Officers</h2>
+  <div class="officers">
+    <div class="officer">
+      <img src="officer1.jpg" alt="President">
+      <h4>Juan Dela Cruz</h4>
+      <p>President</p>
+    </div>
+    <div class="officer">
+      <img src="officer2.jpg" alt="Vice President">
+      <h4>Maria Santos</h4>
+      <p>Vice President</p>
+    </div>
+  </div>
+</section>
+
+<section id="schedule">
+  <h2>Class Schedule</h2>
+  <table>
+    <tbody><tr><th>Day</th><th>Time</th><th>Subject</th></tr>
+    <tr><td>Monday</td><td>8:00 - 10:00</td><td>Crop Science</td></tr>
+    <tr><td>Tuesday</td><td>10:00 - 12:00</td><td>Soil Science</td></tr>
+  </tbody></table>
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img class="slides" src="pic1.jpg" alt="Gallery Image 1">
+    <img class="slides" src="pic2.jpg" alt="Gallery Image 2">
+    <img class="slides" src="pic3.jpg" alt="Gallery Image 3">
+    <button class="prev" onclick="plusSlides(-1)">❮</button>
+    <button class="next" onclick="plusSlides(1)">❯</button>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 USTP Claveria - BSA 1-E | All Rights Reserved</p>
+</footer>
+
+<script>
+function countdown(id,date,label){
+  const x=setInterval(()=>{
+    const now=new Date().getTime();
+    const distance=new Date(date).getTime()-now;
+    if(distance<0){document.getElementById(id).innerHTML=`${label} has started!`; clearInterval(x); return;}
+    const d=Math.floor(distance/(1000*60*60*24));
+    const h=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+    const m=Math.floor((distance%(1000*60*60))/(1000*60));
+    const s=Math.floor((distance%(1000*60))/1000);
+    document.getElementById(id).innerHTML=`${label}: ${d}d ${h}h ${m}m ${s}s`;
+  },1000);
+}
+countdown("midterms","Nov 15, 2025 08:00:00","Midterm Exams");
+countdown("finals","Jan 30, 2026 08:00:00","Final Exams");
+countdown("semesterEnd","Mar 15, 2026 08:00:00","End of Semester");
+
+let slideIndex=1; showSlides(slideIndex);
+function plusSlides(n){showSlides(slideIndex+=n);}
+function showSlides(n){
+  let i;
+  const slides=document.getElementsByClassName("slides");
+  if(slides.length===0)return;
+  if(n>slides.length){slideIndex=1;}
+  if(n<1){slideIndex=slides.length;}
+  for(i=0;i<slides.length;i++){slides[i].style.display="none";}
+  slides[slideIndex-1].style.display="block";
+}
+</script>
+
+
+
+
+</body></html>
